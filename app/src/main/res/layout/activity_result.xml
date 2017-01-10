@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    tools:context="com.lasalle.quiz.ResultActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:text="Your results:"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:stretchColumns="1"
+        android:gravity="center_horizontal">
+        <TableRow>
+            <TextView
+                android:textColor="@android:color/black"
+                android:text="Total number of questions:"
+                android:padding="3dip" />
+            <TextView
+                android:gravity="center"
+                android:text="5"
+                android:layout_marginLeft="20dp"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textColor="@android:color/black"
+                android:text="Correct:"
+                android:padding="3dip"/>
+            <TextView
+                android:gravity="center"
+                android:text="3"
+                android:layout_marginLeft="20dp"
+                android:padding="3dip"
+                android:id="@+id/correctes"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textColor="@android:color/black"
+                android:text="Incorrect:"
+                android:padding="3dip" />
+            <TextView
+                android:gravity="center"
+                android:text="2"
+                android:layout_marginLeft="20dp"
+                android:padding="3dip"
+                android:id="@+id/incorrectes"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_quiz"
+        android:background="@color/defaultColorButton"
+        android:textColor="@android:color/white"
+        android:onClick="btn_submit"/>
+</LinearLayout>

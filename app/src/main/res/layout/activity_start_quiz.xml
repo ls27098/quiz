@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.lasalle.quiz.StartQuizActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/howManyQuestions"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Question 1/5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/question"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:text="Who won the 2014 World Cup?"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="40dp">
+        <RadioButton
+            android:id="@+id/firstQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Argentina"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/secondQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brazil"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/thirdQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spain"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/forthQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Germany"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_quiz"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/defaultColorButton"
+        android:textColor="@android:color/white"
+        android:onClick="btn_submit"/>
+
+</LinearLayout>
